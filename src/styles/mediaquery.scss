@@ -1,0 +1,119 @@
+@media screen and (width <= 786px) {
+  header {
+    position: static;
+  }
+
+  .cart > aside {
+    width: 500px;
+  }
+}
+
+@media screen and (width <= 627px) {
+  .wishlistContainer {
+    padding: 2rem;
+    > .cartItem {
+      width: 100%;
+      grid-template-columns: 1fr;
+      gap: 3rem;
+    }
+  }
+  .Logo {
+    > span {
+      display: none;
+    }
+  }
+  header {
+    position: static;
+  }
+
+  .cart {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+
+    main {
+      height: fit-content;
+      > .cartItem {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+        padding: 1rem 2rem;
+      }
+    }
+    > aside {
+      width: 100%;
+      border-radius: 2rem 2rem 0 0;
+      height: auto;
+      padding: 1rem;
+
+      > h2 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+
+@media screen and (width <= 400px) {
+  .wishlistContainer {
+    padding: 0.5rem;
+    > .cartItem {
+      width: 100%;
+      grid-template-columns: 1fr;
+    }
+  }
+  .Logo {
+    > span {
+      display: none;
+    }
+  }
+  .home > .product {
+    padding: 1rem;
+    margin: 1rem;
+    width: 100%;
+  }
+  header {
+    position: static;
+  }
+  .cart {
+    flex-direction: column;
+    height: auto;
+    padding: 0;
+
+    > main {
+      .cartItem {
+        grid-template-columns: 1fr;
+        padding: 1.5rem;
+        gap: 2rem;
+
+        .buttonGroup > button,
+        .deleteBtn {
+          border-radius: 3px;
+          width: 100%;
+          margin: auto;
+        }
+      }
+    }
+
+    > aside {
+      width: 100%;
+      border-radius: 2rem 2rem 0 0;
+      height: auto;
+      padding: 1rem;
+
+      > h2 {
+        font-size: 0.9rem;
+      }
+    }
+  }
+}
+@media screen and (width > 1240px) {
+  .cart {
+    height: 100%;
+  }
+  .wishlistContainer {
+    width: 50%;
+    padding: 0.5rem;
+    > .cartItem {
+      width: 100%;
+    }
+  }
+}
